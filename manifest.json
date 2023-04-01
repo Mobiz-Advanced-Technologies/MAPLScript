@@ -1,0 +1,16 @@
+{
+    "name": "Mobiz Advanced Programming Languange (MAPLScript)",
+    "short_name": "MAPLScript",
+    "icons": [
+      {
+        "src": "Logo.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "start_url": "html/index.html",
+    "display": "standalone",
+    "theme_color": "#7d4040",
+    "background_color": "#9e5050"
+  }
+  

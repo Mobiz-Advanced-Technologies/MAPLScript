@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Metropolis, Helvetica, sans-serif;
+}
+
+body {
+    overflow: hidden;
+    color: white;
+}
+
+#codearea {
+    width: 50vw;
+    height: 100vh;
+    float: left;
+}
+
+#allvars {
+    background: #20232a;
+    width: 50vw;
+    height: 100vh;
+    float: right;
+    padding: 15px;
+    user-select: none;
+    overflow: auto;
+}
+
+.MaplLogo {
+    width: 75px;
+    float: left;
+}
+
+.MaplTitle {
+    display: inline-block;
+    height: 75px;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+fieldset {
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    border: #4c5463 solid 2px;
+}
+
+legend {
+    font-weight: bold;
+    color: #4c5463;
+}
+
+fieldset button, #filename {
+    padding: 10px;
+    font-weight: bold;
+    background: none;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+#filename {
+    border-bottom: #4c5463 solid 2px;
+    background: #282c34;
+}
+
+fieldset button:hover {
+    background: #282c34;
+}
+
+#error {
+    background: #342a28;
+    padding: 15px;
+    border-radius: 5px;
+    display: none;
+}
+
+#tree {
+    user-select: text;
+}
+
+.cm-leaf {
+    color: orange;
+}
+
+.cm-branch {
+    color: orangered;
+}
+
+.cm-seed {
+    color: dodgerblue;
+}
