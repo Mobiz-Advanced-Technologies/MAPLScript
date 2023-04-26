@@ -1,3 +1,5 @@
+var lastMark = "";
+
 function interpret(code) {
     try {
         const statements = code.split(';');
@@ -21,6 +23,10 @@ function interpret(code) {
                     const value = parts.slice(3, lastIndex + 1).join(" ");
                     const variable = parts[1];
                     tree[variable] = eval(value);
+                } else if (parts[0] === 'mark') {
+                    const lastIndex = parts.length - 1;
+                    const value = parts.slice(1, lastIndex + 1).join(" ");
+                    lastMark = value;
                 } else if (parts[0] === 'branch') {
                     const variable = parts[1];
                     const lastIndex = parts.length - 1;
@@ -48,6 +54,6 @@ function interpret(code) {
 
         return tree;
     } catch (error) {
-        mobizScriptGUIDebug(error)
+        mobizScriptGUIDebug(error, lastMark)
     }
 }

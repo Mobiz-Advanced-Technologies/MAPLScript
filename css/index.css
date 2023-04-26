@@ -90,3 +90,7 @@ fieldset button:hover {
 .cm-seed {
     color: dodgerblue;
 }
+
+.cm-mark {
+    color: green;
+}

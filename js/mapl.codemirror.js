@@ -7,6 +7,8 @@ CodeMirror.defineMode("mapl", function() {
                 return "seed";
             } else if (stream.match("branch") ) {
                 return "branch";
+            } else if (stream.match("mark") ) {
+                return "mark";
             } else {
                 stream.next();
                 return null;

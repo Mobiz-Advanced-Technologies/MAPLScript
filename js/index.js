@@ -44,7 +44,7 @@ function importMAPL() {
     reader.readAsText(file);
 }
 
-function mobizScriptGUIDebug(error) {
+function mobizScriptGUIDebug(error, lastMark) {
     document.getElementById('error').style.display = "block"
-    document.getElementById('error').innerText = (error.message + ". To access functions, branches and leaves try accessing them trough the tree object!")
+    document.getElementById('error').innerText = (error.message + ". Stopped at " + lastMark)
 }
