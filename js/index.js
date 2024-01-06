@@ -2,6 +2,7 @@
 let editor = CodeMirror.fromTextArea(document.getElementById("scriptbox"), {
     lineNumbers: true,
     mode: "mapl",
+    lineWrapping: true,
     theme: "one-dark"
 });
 editor.setSize("100%", "100%");
@@ -10,6 +11,8 @@ editor.setSize("100%", "100%");
 function runScript() {
     document.getElementById('error').style.display = "none"
     document.getElementById('tree').innerHTML = ""
+    tree = {}
+    document.getElementById("Log").innerHTML = ""
     document.getElementById('tree').innerHTML = JSONTree.create(interpret(editor.getValue()))
 }
 
@@ -39,6 +42,7 @@ function importMAPL() {
         const contents = event.target.result;
         editor.setValue(contents);
         document.getElementById("filename").value = input.value.slice(12);
+        input.value = ""
     };
 
     reader.readAsText(file);

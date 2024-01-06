@@ -11,14 +11,14 @@ body {
 }
 
 #codearea {
-    width: 50vw;
+    width: 70vw;
     height: 100vh;
     float: left;
 }
 
 #allvars {
     background: #20232a;
-    width: 50vw;
+    width: 30vw;
     height: 100vh;
     float: right;
     padding: 15px;
@@ -38,11 +38,16 @@ body {
     padding-top: 20px;
 }
 
-fieldset {
+fieldset,
+details {
     border-radius: 5px;
     margin: 20px;
     padding: 20px;
     border: #4c5463 solid 2px;
+}
+
+fieldset {
+    text-align: center;
 }
 
 legend {
@@ -50,7 +55,8 @@ legend {
     color: #4c5463;
 }
 
-fieldset button, #filename {
+fieldset button,
+#filename {
     padding: 10px;
     font-weight: bold;
     background: none;
@@ -62,6 +68,16 @@ fieldset button, #filename {
 #filename {
     border-bottom: #4c5463 solid 2px;
     background: #282c34;
+}
+
+#filename,
+details[open] summary {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+summary, button {
+    cursor: pointer;
 }
 
 fieldset button:hover {
@@ -93,4 +109,50 @@ fieldset button:hover {
 
 .cm-mark {
     color: green;
+}
+
+.cm-string {
+    color: green !important;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-button {
+    width: 4px;
+    height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e1e1e1;
+    border: 0px none #ffffff;
+    border-radius: 41px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #ffffff;
+}
+
+::-webkit-scrollbar-track {
+    background: #1d1d1d;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-track:hover {
+    background: #1d1d1d;
+}
+
+::-webkit-scrollbar-track:active {
+    background: #1d1d1d;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
 }
