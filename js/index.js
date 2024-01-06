@@ -11,9 +11,14 @@ editor.setSize("100%", "100%");
 function runScript() {
     document.getElementById('error').style.display = "none"
     document.getElementById('tree').innerHTML = ""
-    tree = {}
     document.getElementById("Log").innerHTML = ""
-    document.getElementById('tree').innerHTML = JSONTree.create(interpret(editor.getValue()))
+
+    var maplruntime = interpret(editor.getValue())
+    document.getElementById('tree').innerHTML = JSONTree.create(maplruntime)
+}
+
+function print(text) {
+    document.getElementById("Log").innerHTML = document.getElementById("Log").innerHTML + text + "<br>"
 }
 
 function clearTree() {

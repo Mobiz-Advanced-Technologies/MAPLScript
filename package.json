@@ -1,0 +1,16 @@
+{
+  "name": "maplscript",
+  "version": "0.0.3",
+  "description": "A new programming language made by Mobiz-Advanced-Technologies",
+  "bin": {
+    "maplscript": "./js/mapl-node.js"
+  },
+  "scripts": {
+    "start": "node js/mapl-node.js"
+  },
+  "author": "Mobiz-Advanced-Technologies",
+  "license": "Unlicense",
+  "dependencies": {
+    "yargs": "^17.7.2"
+  }
+}
