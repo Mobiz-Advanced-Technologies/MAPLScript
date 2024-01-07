@@ -1,4 +1,4 @@
-# Mobiz Advanced Programming Languange (MAPLScript)
+# Mobiz Advanced Programming language (MAPLScript)
 
 A new programming language made by Mobiz
 
