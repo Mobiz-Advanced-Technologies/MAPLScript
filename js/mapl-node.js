@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var maplscript = require("./mapl")
 var yargs = require('yargs');
 var fs = require('fs');
